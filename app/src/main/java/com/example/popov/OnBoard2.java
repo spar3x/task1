@@ -17,4 +17,8 @@ public class OnBoard2 extends AppCompatActivity {
         Intent intent = new Intent(this, AdaptiveOnBoard.class);
         startActivity(intent);
     }
+    public void onClick1(View v){
+        Intent intent = new Intent(this, OnBoard1.class);
+        startActivity(intent);
+    }
 }

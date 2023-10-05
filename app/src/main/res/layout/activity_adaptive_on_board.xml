@@ -30,6 +30,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                android:onClick="onClick1"
                 android:scaleType="fitEnd"
                 app:srcCompat="@drawable/shape"
                 tools:srcCompat="@drawable/shape" />
@@ -54,16 +55,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:layout_marginStart="85dp"
-            android:layout_marginEnd="85dp"
-            android:text="\ \ \ \ Наши врачи всегда наблюдают \ \ за вашими показателями здоровья"
+            android:gravity="center"
+            android:text="Наши врачи всегда наблюдают за вашими показателями здоровья"
+            android:textAlignment="center"
             android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="20dp">
+            android:layout_marginTop="15dp">
 
             <ImageView
                 android:id="@+id/imageView6"
