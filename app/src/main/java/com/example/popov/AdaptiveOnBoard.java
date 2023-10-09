@@ -17,4 +17,8 @@ public class AdaptiveOnBoard extends AppCompatActivity {
         Intent intent = new Intent(this, OnBoard2.class);
         startActivity(intent);
     }
+    public void onClick(View v){
+        Intent intent = new Intent(this, EmailActivity.class);
+        startActivity(intent);
+    }
 }

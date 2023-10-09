@@ -9,35 +9,37 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <ImageView
-            android:layout_marginTop="50dp"
             android:id="@+id/imageView"
-            android:layout_marginStart="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
             app:srcCompat="@drawable/hey" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Войдите, чтобы пользоваться функциями приложения"
-            android:textSize="16sp"
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
+            android:text="Войдите, чтобы пользоваться функциями приложения"
+            android:textSize="16sp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="60dp"
             android:text="Вход по E-mail"
             android:textColor="#9A9292"
-            android:textStyle="bold"
-            android:layout_marginTop="60dp"
-            android:layout_marginStart="20dp"/>
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/editTextTextEmailAddress"
@@ -45,10 +47,41 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
-            android:background="#ffffff"
+            android:background="@drawable/bgwhite"
             android:ems="10"
             android:inputType="textEmailAddress"
             android:textColor="#B8B6B6"
-            tools:text="example@mail.ru" />
+            tools:text="\ \ example@mail.ru" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="#076AFF"
+            android:bottomLeftRadius="10dp"
+            android:bottomRightRadius="100dp"
+            android:text="Далее"
+            app:cornerRadius="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_weight=""
+                android:backgroundTint="#FFFFFF"
+                android:text="Button"
+                android:textColor="#070606"
+                app:cornerRadius="10dp" />
+        </LinearLayout>
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
