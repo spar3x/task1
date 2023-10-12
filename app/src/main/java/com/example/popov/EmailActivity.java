@@ -3,10 +3,12 @@ package com.example.popov;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Patterns;
+import android.view.View;
 import android.widget.EditText;
 
 public class EmailActivity extends AppCompatActivity {
@@ -56,5 +58,9 @@ public class EmailActivity extends AppCompatActivity {
             login.setEnabled(false);
             login.setBackgroundColor(getColor(R.color.lightblue));
         }
+    }
+    public void onClick(View v){
+        Intent intent = new Intent(this, CodeEmailActivity.class);
+        startActivity(intent);
     }
 }
